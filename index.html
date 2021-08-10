@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Lista de tareas</h1>
+    </header>
+
+    <div class="fecha">
+        <h2>Fecha:
+            <script>
+                var f = new Date();
+                    document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+            </script>    
+        </h2>
+    </div>
+
+    <body>
+        <div class="principal">
+            <div class="wrap">
+                <form class="formulario" action="">
+                    <input type="text" id="tareaInput" placeholder="Agrega tu tarea">
+                    <input type="button" class="boton" id="btn-agregar" value="Agregar Tarea">
+                </form>
+            </div>
+        </div>
+    
+        <div class="tareas">
+            <div class="wrap">
+                <ul class="lista" id="lista">
+                    <li><a href="#">Ejemplo: Tu tarea</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>
